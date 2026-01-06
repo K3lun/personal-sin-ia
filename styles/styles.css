@@ -1,0 +1,165 @@
+/* =========================================
+   CAPA 1: EL ADN (Variables Globales)
+   Aquí defines tu marca. Cambia esto y cambia todo.
+   ========================================= */
+:root {
+    /* Paleta de Colores (Minimalista) */
+    --primary: #2563eb;       /* Azul moderno */
+    --primary-hover: #1d4ed8; /* Azul más oscuro */
+    --bg-body: #f8fafc;       /* Gris muy clarito (no blanco puro) */
+    --bg-card: #ffffff;       /* Blanco puro */
+    --text-main: #1e293b;     /* Gris oscuro (nunca negro puro) */
+    --text-light: #64748b;    /* Gris texto secundario */
+    --danger: #ef4444;        /* Rojo para borrar/error */
+
+    /* Espaciado y Formas */
+    --radio: 12px;            /* Qué tan redondos son los bordes */
+    --sombra: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    --gap: 1rem;              /* Espacio estándar (16px) */
+}
+
+/* =========================================
+   CAPA 2: RESET & BASE (Limpieza)
+   ========================================= */
+* {
+    box-sizing: border-box; /* Fundamental para que las medidas sean exactas */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.5;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+    /* Esto es vital para que el padding no rompa el ancho */
+    box-sizing: border-box;
+
+}
+
+/* =========================================
+   CAPA 3: COMPONENTES (Tus piezas de Lego)
+   ========================================= */
+
+/* 1. Contenedores (Layout) */
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Centrado automático */
+    padding: 0 var(--gap);
+}
+
+.flex-row {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 2. Tarjetas (Cards) */
+.card {
+    background-color: var(--bg-card);
+    border-radius: var(--radio);
+    padding: 2rem;
+    box-shadow: var(--sombra);
+    margin-bottom: var(--gap);
+}
+
+/* 3. Inputs (Formularios) */
+.input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radio);
+    background: #f8fafc;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.input:focus {
+    border-color: var(--primary);
+    background: white;
+}
+
+/* 4. Botones */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: var(--radio);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+.btn-primary:hover { background-color: var(--primary-hover); }
+
+.btn-danger {
+    background-color: transparent;
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    padding: 0.4rem 0.8rem; /* Más pequeño */
+}
+.btn-danger:hover { background-color: var(--danger); color: white; }
+
+/* 5. Títulos */
+.title { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; color: var(--primary); }
+.subtitle { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; }
+
+/* 6. Utilidades (Pequeños helpers) */
+.text-center { text-align: center; }
+.mt-2 { margin-top: 1rem; }
+.w-full { width: 100%; }
+
+/*CRISTIAN*/
+.nav-bar{
+    display: flex;
+    justify-content:center;
+    padding: 0;
+    background-color: var(--primary-hover);
+    align-items: center;
+    height: auto;
+
+
+}
+.text-nav{
+    display: flex;
+    gap: 2rem;
+    margin: .5rem;
+    padding: .5rem ;
+    color: var(--bg-body);
+    font-weight: bold;
+    font-size: large;
+
+}
+.text-hover:hover{
+        transition: ease-in-out 0.2s;
+        color: #64748b;
+        
+}
+@media (min-width: 768px) {
+    
+    .nav-bar {
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 0rem;
+        justify-content:center;
+    }
+
+    .text-nav {
+        display: flex; 
+        gap: 2rem;
+    }
+}
