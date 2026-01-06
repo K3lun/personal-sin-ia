@@ -165,3 +165,8 @@ body {
         gap: 2rem;
     }
 }
+.logo{
+    display: flex;
+    justify-content: space-between;
+    mequedeaqui
+}
