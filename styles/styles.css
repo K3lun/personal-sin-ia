@@ -4,9 +4,10 @@
    ========================================= */
 :root {
     /* Paleta de Colores (Minimalista) */
+    --white: #ffffff;
     --primary: #2563eb;       /* Azul moderno */
     --primary-hover: #1d4ed8; /* Azul más oscuro */
-    --bg-body: #f8fafc;       /* Gris muy clarito (no blanco puro) */
+    --bg-body: #EFF6FF;       /* Gris muy clarito (no blanco puro) */
     --bg-card: #ffffff;       /* Blanco puro */
     --text-main: #1e293b;     /* Gris oscuro (nunca negro puro) */
     --text-light: #64748b;    /* Gris texto secundario */
@@ -28,7 +29,8 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+
+    font-family: inherit;
     background-color: var(--bg-body);
     color: var(--text-main);
     line-height: 1.5;
@@ -128,7 +130,7 @@ body {
     display: flex;
     justify-content:center;
     padding: 0;
-    background-color: var(--primary-hover);
+    background-color: var(--white);
     align-items: center;
     height: auto;
 
@@ -139,14 +141,14 @@ body {
     gap: 2rem;
     margin: .5rem;
     padding: .5rem ;
-    color: var(--bg-body);
-    font-weight: bold;
-    font-size: large;
+    color: #6B7280;
+    font-weight: 500; /* Un grosor medio, no muy gordo */
+    font-size:medium;
 
 }
 .text-hover:hover{
-        transition: ease-in-out 0.2s;
-        color: #64748b;
+        transition: ease-in-out 0.5s;
+        color: #000000;
         
 }
 @media (min-width: 768px) {
