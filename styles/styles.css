@@ -41,7 +41,10 @@ body {
     box-sizing: border-box;
 
 }
-
+h1{
+    display: grid;
+    grid-template-columns: 1/2;
+}
 /* =========================================
    CAPA 3: COMPONENTES (Tus piezas de Lego)
    ========================================= */
@@ -128,7 +131,7 @@ body {
 /*CRISTIAN*/
 .nav-bar{
     display: flex;
-    justify-content:space-between;
+    justify-content:start;
     padding: 0;
     background-color: var(--white);
     align-items: center;
@@ -136,6 +139,18 @@ body {
     width: 100%;
     position: relative;
 
+
+}
+.nav-bar-2{
+    display: flex;
+    justify-content:right;
+    padding: 0 6rem;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    position: relative;
+    gap: 2rem;
+    margin: 0;
 
 }
 .text-nav{
@@ -146,7 +161,7 @@ body {
     color: #6B7280;
     font-weight: 500; /* Un grosor medio, no muy gordo */
     font-size:medium;
-    justify-content: center;
+    justify-content: left;
 
     
 
@@ -170,8 +185,9 @@ body {
     }
 }
 .logo{
-    display: flex;
-    
+
+    width: 15rem;
+
 
 
 }
