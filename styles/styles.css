@@ -128,11 +128,13 @@ body {
 /*CRISTIAN*/
 .nav-bar{
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     padding: 0;
     background-color: var(--white);
     align-items: center;
     height: auto;
+    width: 100%;
+    position: relative;
 
 
 }
@@ -144,6 +146,9 @@ body {
     color: #6B7280;
     font-weight: 500; /* Un grosor medio, no muy gordo */
     font-size:medium;
+    justify-content: center;
+
+    
 
 }
 .text-hover:hover{
@@ -155,9 +160,8 @@ body {
     
     .nav-bar {
         flex-direction: row; 
-        justify-content: space-between;
+
         padding: 0rem;
-        justify-content:center;
     }
 
     .text-nav {
@@ -167,6 +171,7 @@ body {
 }
 .logo{
     display: flex;
-    justify-content: space-between;
-    mequedeaqui
+    
+
+
 }
